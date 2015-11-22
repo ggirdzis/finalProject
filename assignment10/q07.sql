@@ -1,0 +1,1 @@
+select distinct fldFirstName, fldLastName, count(fnkStudentId), fldGrade from tblStudents inner join tblEnrolls on tblStudents.pmkStudentId = tblEnrolls.fnkStudentId where fldState = "VT" and fldGrade > (select avg(fldGrade) from tblEnrolls inner join tblStudents on tblEnrolls.fnkStudentId = tblStudents.pmkStudentId where fldState = "VT") group by fldFirstName;

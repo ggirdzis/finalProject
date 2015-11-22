@@ -1,0 +1,1 @@
+select distinct fldCourseName, fldDays, fldStart from (tblSections inner join tblTeachers on tblSections.fnkTeacherNetId = tblTeachers.pmkNetId) inner join tblCourses on tblSections.fnkCourseId = tblCourses.pmkCourseId where fldFirstName = "Jackie Lynn" and fldLastName = "Horton" order by fldStart;

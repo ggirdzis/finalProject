@@ -1,0 +1,1 @@
+select distinct fldCourseName from tblCourses, tblEnrolls where fldGrade = 100;

@@ -1,0 +1,5 @@
+Get out of 148develop into cs148
+
+Go to live folder (always a pull)
+git pull origin master
+

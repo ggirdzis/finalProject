@@ -1,0 +1,1 @@
+select fldLastName, fldFirstName from tblTeachers where pmkNetId like "r%" and pmkNetId like "%o";

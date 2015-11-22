@@ -1,0 +1,1 @@
+select fldFirstName, fldPhone, fldSalary from tblTeachers where fldSalary < all (select avg(fldSalary) from tblTeachers);

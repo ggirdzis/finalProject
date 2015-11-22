@@ -1,0 +1,4 @@
+$fields = array_keys($info[0]);
+$labels = array_filter($fields, "is_string");
+print("<p><pre>";
+print_r($fields);

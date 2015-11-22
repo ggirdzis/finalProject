@@ -1,0 +1,1 @@
+select pmkStudentId, fldFirstName, fldLastName, fldStreetAddress, fldCity, fldState, fldZip, fldGender from tblStudents order by fldLastName,fldFirstName limit 1000,10;
