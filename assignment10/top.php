@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+    
     <head>
-        <title>Mark me wrong</title>
+        
+        <title>Cupcake Connection</title>
         <meta charset="utf-8">
-        <meta name="author" content="Mark me wrong">
-        <meta name="description" content="Mark me wrong for not changing this">
+        <meta name="author" content="Gretchen Girdzis">
+        <meta name="description" content="Website created for people to share cupcake recipes and learning new recipes and tips in relation to cupcakes.">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -52,15 +54,62 @@
 //
 
         require_once('lib/security.php');
+        
 
         if ($path_parts['filename'] == "form") {
             include "lib/validation-functions.php";
             include "lib/mail-message.php";
             require_once "lib/constants.php";
         }
+        
+        if ($path_parts['filename'] == "post") {
+            include "lib/validation-functions.php";
+            include "lib/mail-message.php";
+            require_once "lib/constants.php";
+        }
+        
+        if ($path_parts['filename'] == "update") {
+            include "lib/validation-functions.php";
+            include "lib/mail-message.php";
+            require_once "lib/constants.php";
+        }
+        
+         if ($path_parts['filename'] == "trend") {
+            include "lib/validation-functions.php";
+            include "lib/mail-message.php";
+            require_once "lib/constants.php";
+        }
+        
+        if ($path_parts['filename'] == "healthy") {
+            include "lib/validation-functions.php";
+            include "lib/mail-message.php";
+            require_once "lib/constants.php";
+        }
+        
+        if ($path_parts['filename'] == "budget") {
+            include "lib/validation-functions.php";
+            include "lib/mail-message.php";
+            require_once "lib/constants.php";
+        }
+        if ($path_parts['filename'] == "gluten") {
+            include "lib/validation-functions.php";
+            include "lib/mail-message.php";
+            require_once "lib/constants.php";
+        }
+        
+        if ($path_parts['filename'] == "vegan") {
+            include "lib/validation-functions.php";
+            include "lib/mail-message.php";
+            require_once "lib/constants.php";
+        }
+        
+        
+        
         ?>	
 
     </head>
+    
+
     <!-- ################ body section ######################### -->
 
     <?php
@@ -69,3 +118,4 @@
     include "header.php";
     include "nav.php";
     ?>
+

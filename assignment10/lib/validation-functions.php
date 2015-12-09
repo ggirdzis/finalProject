@@ -25,4 +25,7 @@ function verifyPhone ($testString) {
 	return (preg_match($regex, $testString));
 }
 
+
+
+
 ?>

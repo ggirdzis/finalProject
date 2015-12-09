@@ -9,4 +9,10 @@ $dbName = strtoupper(get_current_user()).'_FINAL';
 
 $thisDatabaseWriter = new Database($dbUserName,$whichPass,$dbName);
 
+$dbUserNameR = get_current_user().'_reader';
+$whichPassR = "r";
+$dbNameR = strtoupper(get_current_user()).'_FINAL';
+
+$thisDatabaseReader = new Database($dbUserNameR,$whichPassR,$dbNameR);
+
 ?>

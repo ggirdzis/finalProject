@@ -16,7 +16,7 @@ $dataRecord[] = $comments;
 
 //Error check: SECTION 2d.
 // similar to text boxes
-?>
+ ?>
 
 <fieldset  class="textarea">					
     <label for="txtComments" class="required">Comments</label>

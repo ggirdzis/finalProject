@@ -1,144 +1,458 @@
-/* CSS designed by  Robert Erickson 
 
-to understand the comments like 900px / 960px
-   read http://alistapart.com/article/responsive-web-design/
-
-*/
-/*****************     main layout section             ************************/
-body{
+#btnSubmit {
+    font-size: 1em;
+}
+#trend table tbody tr {
+    text-align: left;
+}
+#trend #frmRegister {
+    border: medium none;
+}
+#delete h1, #update h1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: medium solid;
+    display: block;
+    margin: 2em auto;
+    text-align: center;
+    width: 50%;
+}
+#update #main {
+    display: block;
+    margin: auto;
+}
+#update #main #frmRegister .wrapper {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+#delete #main {
+    display: block;
+    margin: auto auto 2em;
+    width: 100%;
+}
+#update #main {
+    display: block;
+    margin: auto auto 2em;
+    width: 100%;
+}
+#update #main #frmRegister label, #update #main #frmRegister input, #update #main #frmRegister #txtPost {
+    display: block;
+    float: none;
+    font-family: serif;
+    margin: 1em auto auto;
+    width: 80%;
+}
+#errors ol {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: medium solid;
+    font-size: 13pt;
+    font-weight: bold;
+    list-style: outside none none;
+    padding: 1em;
+    text-align: center;
+}
+span {
+    font-style: italic;
+    font-weight: bold;
+}
+h3 {
+    text-align: center;
+}
+#form #mainbod {
+    font-size: 13pt;
+    line-height: 2em;
+    padding: 2em;
+    text-align: left;
+}
+header {
+}
+#mainbod {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: medium solid;
+}
+#cc {
+    display: block;
+    margin: auto;
+    width: 600px;
+}
+body {
     margin: 36px auto;
     width: 90%;
 }
-
-#page{
-    margin: 0 auto 53px;
-    width: 93.75%; /* 900px / 960px  */
+#worldHome {
+    display: block;
+    margin: auto;
+}
+#para2 {
+    background-color: rgba(245, 225, 225, 0.8);
+    border: 1px solid;
+    font-size: 15pt;
+    line-height: 2em;
+    padding: 1em;
+    text-indent: 3em;
+}
+fieldset input:hover, .post #txtPost:hover, .post select:hover {
+    box-shadow: 1px 1px 10px pink;
+}
+.post select {
+    font-size: 10pt;
+}
+.checkbox label input {
+    float: left;
+}
+select {
+    font-size: 8pt;
+    height: 2em;
+}
+#page {
     border: 1px solid black;
     border-radius: 15px;
+    margin: 0 auto 53px;
+    width: 93.75%;
 }
-
-#main{
+header {
+    display: block;
+    margin: auto auto 1em;
+    width: 75%;
+}
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+form fieldset {
+    border: medium none;
+}
+nav {
+    background-color: rgba(200, 30, 90, 0.8);
+    color: lightgreen;
+}
+#main {
     float: left;
-    width: 62.8888889%; /* 566px / 900px */
+    width: 62.8889%;
 }
-
-#other{
+#other {
     float: right;
-    width: 36.7777778%; /* 331px / 900px */
+    width: 36.7778%;
 }
-
-/*****************     header section             *****************************/
 header h1 {
-    padding: 0.8em 5.33333333%;  /* 48px / 900px */
+    padding: 0.8em 5.33333%;
 }
-
-
-/*****************     navigation section         *****************************/
 nav ol {
-    padding-left: 5.33333333%;  /* 48px / 900px */
+    padding-left: 5.33333%;
 }
-nav ol li{
+nav ol li {
     display: inline-block;
     list-style-type: none;
     padding-right: 3em;
 }
-
-
-/*****************     article section             ****************************/
-/* un comment and see what happens */
-/*
-article{
-    height: 200px;
-    overflow: auto;
+article h1, article p, article table {
+    padding: 0.2em 8.48057%;
 }
-*/
-
-article h1, article p, article table{
-    padding: .2em 8.48056537% .2em 8.48056537%; /* 48px / 566px */
+.checkbox label input {
+    text-align: center;
 }
-
-
-/*****************     aside section              *****************************/
 aside {
     margin: 0 auto;
-    width: 69.7885196%; /* 231px / 331px */
+    width: 69.7885%;
 }
-aside h2, aside p{
-    padding: .2em 8.48056537% .2em 8.48056537%; /* 48px / 566px */
+aside h2, aside p {
+    padding: 0.2em 8.48057%;
 }
-
-
-/*****************     footer section              ****************************/
-footer{
+footer {
     clear: both;
-    padding: 0.8em 5.33333333%;  /* 48px / 900px */
+    padding: 0.8em 5.33333%;
 }
-
-/*****************     form section                ****************************/
-#form article#main{
+#form article#main {
     float: none;
-    margin: auto; /* because of the fixed width this centers the form */
+    margin: auto;
     text-align: left;
-    width: 600px; /* not repsonive but fixed */
+    width: 600px;
 }
-
-/* need to clear any floats that may exist */
-fieldset{
+fieldset {
     border: 1px solid #00498e;
-    clear: both;  
+    clear: both;
 }
-/* just pushes content to left side of the box. */
-fieldset.contact{
-    float: left;
+fieldset.contact {
+    border: 1px solid;
 }
-/* when you look at the labels this pushes then next to the input and right
-aligns them. Display block means they are each on their own line. */
-fieldset.contact label{
+fieldset.contact label {
     display: block;
-    text-align: right /* pushes the text to the right where they line up */
-        /* the float left above pushes everything back to the left*/
+    text-align: right;
 }
-
-fieldset.contact input{
-    width: 15em; /* works with above to be the same size for the boxes */
+fieldset.contact input {
+    width: 15em;
 }
-
-fieldset.buttons{
-    border: none;
+fieldset.buttons {
+    border: medium none;
 }
-
 fieldset.wrapper {
-    border: 0;
+    border: 0 none;
     margin: auto;
 }
-
 fieldset.wrapper legend {
-    color: #00498e;
+    color: black;
     font-size: 1.2em;
     font-weight: bold;
     margin-top: 10px;
+    text-decoration: underline;
+    width: 100%;
 }
-
 fieldset.wrapper > legend {
-    /* i only want the first legend ie if it follows the class wrapper */
     font-size: 2em;
 }
-
+.wrapper p {
+    font-size: 14pt;
+}
 label {
     color: #005cb3;
     display: block;
-    font-size: .9em;
+    font-size: 0.9em;
     font-weight: bold;
 }
-
-/* style the errors in the form so they are visible */
 .mistake {
-    color: #fff;
-    background-color:#800;
+    background-color: #800;
     border: thin solid #000;
+    color: #fff;
 }
-
-/* style the list of errors that will show before the form */
-#errors ol li{
+#errors ol li {
     color: #ff5555;
+}
+table {
+    width: 100%;
+}
+#mainbod table tbody tr {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: medium solid;
+}
+td {
+    background-color: turquoise;
+    display: block;
+    font-size: 14pt;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+td {
+}
+td:nth-child(2) {
+    text-indent: 3em;
+}
+td:first-child {
+    text-align: center;
+}
+td:nth-child(3) {
+}
+td:last-child {
+    background: turquoise url("http://4.bp.blogspot.com/-rshRPIn2sQU/UdRiK7jG5HI/AAAAAAAAHDA/ycbcyNoEYb8/s269/heart.png") no-repeat scroll 1% center / 1em auto;
+    font-size: 12pt;
+    padding-left: 3%;
+    text-align: left;
+}
+#two ol {
+    display: block;
+    float: left;
+    margin: auto;
+}
+td:first-child {
+    font-size: 20pt;
+    font-weight: bold;
+    text-decoration: underline;
+}
+nav ol li {
+    border-color: #777777 #333333 #444444 #777777;
+}
+nav {
+    display: block;
+    width: 100%;
+}
+#two li {
+    display: block;
+}
+nav ol li {
+    text-align: center;
+}
+nav ol li {
+    text-align: center;
+}
+nav ol li a {
+    color: black;
+    font-size: 14pt;
+}
+#one {
+    border: medium solid black;
+    border-radius: 35px;
+    font-size: 100%;
+    margin: auto auto 1%;
+    text-align: center;
+}
+#one ol li {
+    margin-left: auto;
+    margin-right: auto;
+}
+form {
+    border: medium solid;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+hr {
+    border-width: 1px;
+    color: lightgray;
+}
+label {
+    color: turquoise;
+    float: left;
+    font-size: 12pt;
+    margin: 1em;
+    text-align: center;
+}
+fieldset .textarea {
+}
+.post {
+    border: 1px solid;
+    margin-top: 1em;
+}
+#check label {
+    width: 25%;
+}
+#txtPost {
+    float: left;
+}
+#txtTitle {
+    display: block;
+    width: 100%;
+}
+.required input {
+    font-size: 12pt;
+    height: 2em;
+}
+.post .checkbox legend {
+    color: black;
+    display: inline;
+    text-align: center;
+}
+.checkbox {
+}
+.post label {
+    display: block;
+    float: none;
+    margin: auto;
+    width: 50%;
+}
+html {
+    background-image: url("http://thesmashable.com/wp-content/uploads/2013/12/awesome-christmas-backgrounds-wallpapers-christmas-patterns-free-download.png");
+    background-repeat: repeat;
+    background-size: 100% auto;
+}
+.textarea {
+    display: block;
+    float: none;
+    margin: auto;
+    width: 50%;
+}
+.post #txtPost {
+    font-family: serif;
+    font-size: 14pt;
+}
+html head {
+    background-color: white;
+}
+#trend select:hover {
+    box-shadow: 1px 1px 10px pink;
+}
+#trend #btnSubmit {
+    float: left;
+}
+#trend select {
+    font-size: 10pt;
+}
+h2 {
+    float: left;
+    font-size: 30pt;
+    text-align: center;
+    text-decoration: underline;
+    width: 100%;
+}
+html {
+}
+footer {
+    display: block;
+    margin: 1em auto auto;
+    text-align: center;
+    width: 25%;
+}
+#two ol li {
+    display: block;
+    margin: auto;
+    text-align: left;
+}
+#two ol {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: medium solid;
+    float: left;
+    line-height: 2em;
+    margin: auto;
+    padding-left: 0.5em;
+}
+#para1 {
+    width: 100%;
+}
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+#para1 {
+}
+#trend label, #trend .buttons #btnSubmit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+#para1 p {
+    font-size: 18pt;
+    line-height: 2em;
+    margin-left: 5%;
+    text-align: left;
+    text-indent: 2em;
+    width: 90%;
+}
+#trend .buttons #btnSubmit {
+    display: block;
+    margin: auto;
+}
+#world {
+    float: left;
+    width: 145px;
+}
+#frmRegister {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+#btnSubmit {
+}
+#update #main #frmRegister {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+#trend #trendpara {
+    display: block;
+    font-size: 15pt;
+    margin: auto;
+    width: 80%;
+}
+a:hover {
+    border-bottom: 2px solid turquoise;
+}
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: medium solid;
+    border-radius: 55px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+#two ol {
 }

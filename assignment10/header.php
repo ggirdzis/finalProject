@@ -1,5 +1,7 @@
 
 <!-- ######################     Page header   ############################## -->
 <header>
-    <h1>main title for SITE</h1>
+    <figure>
+        <img id="cc" src="Cupcake Connection.png"/>
+    </figure>
 </header>
